@@ -70,7 +70,7 @@ function find( value, array ){
   }
   return false;  
 }
-// I was really confused as to why you couldn't use and else return false. Entering an else cause issues on the console log
+// I was really confused as to why you couldn't use an else return false; like in question 5. I think I might understand becuase its a loop, but still foggy on why
 console.log('Test - value is set to an array value', find(3, [1, 3, 5, 7, 9]));
 console.log('Test - value is NOT set to an array value', find(2, [1, 3, 5, 7, 9]));
 // ----------------------
