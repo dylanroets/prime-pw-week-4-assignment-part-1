@@ -63,9 +63,16 @@ console.log('Test - Return the last array item, if empty return undefined:', get
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for (let index = 0; index < array.length; index++) {
+    if (value === array[index]) {
+      return true;
+    }
+  }
+  return false;  
 }
-
+// I was really confused as to why you couldn't use and else return false. Entering an else cause issues on the console log
+console.log('Test - value is set to an array value', find(3, [1, 3, 5, 7, 9]));
+console.log('Test - value is NOT set to an array value', find(2, [1, 3, 5, 7, 9]));
 // ----------------------
 // Stretch Goals
 // ----------------------
